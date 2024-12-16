@@ -1,6 +1,6 @@
 baseurl = "https://example.com"
-defaultContentLanguage = "en"
-languageCode = "en"
+defaultContentLanguage = "zh"
+languageCode = "zh"
 title = "Hugo Theme Dream"
 theme = "hugo-theme-dream"
 
@@ -19,15 +19,15 @@ darkTheme = "forest"
 # backgroundImage = "me/background.jpg"
 # backgroundImageDark = ""
 
-author = "Dream"
+author = "xiangmiangya"
 # description = ""
-# avatar = "img/avatar.png"
-headerTitle = "Hugo Theme Dream"
+avatar = "img/avatar.png"
+headerTitle = "Ai Listings Blog"
 # motto = ""
 
 # footerBottomText = ""
 
-# rss = true
+rss = true
 
 # utterancesRepo = ""
 
