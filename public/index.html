@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="zh"
   x-data
   :class="$store.darkMode.class()"
   :data-theme="$store.darkMode.theme()">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Hugo Theme Dream</title>
+    <title>首页 | Hugo Theme Dream</title>
 
     
 
@@ -14,7 +14,7 @@
 
 
 
-<meta name="author" content="Dream" />
+<meta name="author" content="xiangmiangya" />
 <meta name="description" content="" />
 
 
@@ -25,7 +25,7 @@
 <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="Hugo Theme Dream">
   <meta property="og:title" content="Hugo Theme Dream">
-  <meta property="og:locale" content="en">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="website">
 
 
@@ -62,9 +62,9 @@
   <div class="container flex justify-between px-4">
   
     <section class="flex items-center gap-4">
-      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="翻转一下！">
         <div class="h-10 rounded-full">
-          <img src="/" alt="Hugo Theme Dream" />
+          <img src="/img/avatar.png" alt="Ai Listings Blog" />
         </div>
       </div>
 
@@ -72,7 +72,7 @@
       <div>
         
         <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
-          Hugo Theme Dream
+          Ai Listings Blog
         </a>
         
         
@@ -98,9 +98,12 @@
 
 
 
-
-
-
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
 
 
 
@@ -147,9 +150,9 @@
 
       
       
-
-
-
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
 
 
       
