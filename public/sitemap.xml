@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.ailistings.cn/</loc>
+    <lastmod>2024-12-17T12:55:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.ailistings.cn/categories/</loc>
+    <lastmod>2024-12-17T12:55:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.ailistings.cn/tags/chat-gpt/</loc>
+    <lastmod>2024-12-17T12:55:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.ailistings.cn/posts/chatgpt%E7%9A%84%E8%A7%86%E8%A7%89%E9%9D%A9%E5%91%BDai%E6%8A%80%E6%9C%AF%E7%9A%84%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BA%A4%E4%BA%92%E6%96%B0%E7%BA%AA%E5%85%83/</loc>
+    <lastmod>2024-12-17T12:55:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.ailistings.cn/posts/</loc>
+    <lastmod>2024-12-17T12:55:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.ailistings.cn/tags/</loc>
+    <lastmod>2024-12-17T12:55:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.ailistings.cn/categories/%E6%96%B0%E9%97%BB/</loc>
+    <lastmod>2024-12-17T12:55:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.ailistings.cn/tags/openai-%E4%B9%8B%E7%88%B6/</loc>
     <lastmod>2024-12-17T12:37:14+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-17T12:37:14+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/openai-%E4%B9%8B%E7%88%B6/</loc>
-    <lastmod>2024-12-17T12:37:14+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/openai%E4%B9%8B%E7%88%B6%E9%A2%84%E8%A8%80ai%E5%8F%91%E5%B1%95%E7%9A%84%E6%96%B0%E6%9B%99%E5%85%89%E4%B8%8E%E9%9A%90%E5%BF%A7/</loc>
-    <lastmod>2024-12-17T12:37:14+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-12-17T12:37:14+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-12-17T12:37:14+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E6%96%B0%E9%97%BB/</loc>
+    <loc>https://blog.ailistings.cn/posts/openai%E4%B9%8B%E7%88%B6%E9%A2%84%E8%A8%80ai%E5%8F%91%E5%B1%95%E7%9A%84%E6%96%B0%E6%9B%99%E5%85%89%E4%B8%8E%E9%9A%90%E5%BF%A7/</loc>
     <lastmod>2024-12-17T12:37:14+08:00</lastmod>
   </url>
 </urlset>
