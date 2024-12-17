@@ -42,7 +42,7 @@ rss = true
 
 siteStartYear = 2020
 
-favicon = "favicon.ico"
+favicon = "img/favicon.ico"
 
 # 代码高亮
 highlightjs = true

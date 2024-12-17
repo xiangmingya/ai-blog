@@ -2,28 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.ailistings.cn/</loc>
     <lastmod>2024-12-17T08:48:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/articletitle/</loc>
+    <loc>https://blog.ailistings.cn/posts/</loc>
     <lastmod>2024-12-17T08:48:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-17T08:48:50+08:00</lastmod>
+    <loc>https://blog.ailistings.cn/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/category1/</loc>
-    <lastmod>2024-12-17T08:48:50+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-12-17T08:48:50+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tag1/</loc>
-    <lastmod>2024-12-17T08:48:50+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tag2/</loc>
-    <lastmod>2024-12-17T08:48:50+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-12-17T08:48:50+08:00</lastmod>
+    <loc>https://blog.ailistings.cn/tags/</loc>
   </url>
 </urlset>
