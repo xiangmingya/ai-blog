@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Ai Listings Blog</title>
-    <link>https://blog.ailistings.cn/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Ai Listings Blog</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://blog.ailistings.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Dec 2024 12:37:14 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI之父预言：AI发展的新曙光与隐忧</title>
+      <link>http://localhost:1313/posts/openai%E4%B9%8B%E7%88%B6%E9%A2%84%E8%A8%80ai%E5%8F%91%E5%B1%95%E7%9A%84%E6%96%B0%E6%9B%99%E5%85%89%E4%B8%8E%E9%9A%90%E5%BF%A7/</link>
+      <pubDate>Tue, 17 Dec 2024 12:37:14 +0800</pubDate>
+      <guid>http://localhost:1313/posts/openai%E4%B9%8B%E7%88%B6%E9%A2%84%E8%A8%80ai%E5%8F%91%E5%B1%95%E7%9A%84%E6%96%B0%E6%9B%99%E5%85%89%E4%B8%8E%E9%9A%90%E5%BF%A7/</guid>
+      <description>&lt;blockquote&gt;&#xA;    &lt;p&gt;本文围绕“OpenAI 之父”的预言展开讨论。预言称下一代 AI 将产生自我意识，因人类数据有限会自学推理且变得不可预测，而其仍在开发 AI 并以“超级安全”为目标。文章先阐述了预言引发的热议，接着回顾了 AI 从弱到强的发展历程，深入分析了自学推理的变革性意义，包括突破数据限制、智能跃升及行为不可预测性带来的风险挑战。还探讨了通向“超级安全”的探索之旅，涉及理念转变、技术与制度保障以及全球合作的必要性。最后对未来社会的深远影响进行了展望，包括工作与就业重塑、伦理道德思考以及人机关系新篇章，强调人类应积极应对 AI 带来的机遇与挑战，共同塑造美好未来。&lt;/p&gt;&#xA;&#xA;  &lt;/blockquote&gt;</description>
+    </item>
   </channel>
 </rss>

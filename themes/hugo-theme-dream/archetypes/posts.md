@@ -2,9 +2,9 @@
 title: {{ replace .TranslationBaseName "-" " " | title }}
 date: {{ .Date }}
 lastmod: {{ .Date }}
-author: Author Name
-# avatar: /img/author.jpg
-# authorlink: https://author.site
+author: xiangmingya
+avatar: /img/author.jpg
+authorlink: https://ailistings.cn/
 cover: /img/cover.jpg
 # images:
 #   - /img/cover.jpg
