@@ -1,7 +1,7 @@
-baseurl = "https://example.com"
+baseurl = "https://blog.ailistings.cn/"
 defaultContentLanguage = "zh"
 languageCode = "zh"
-title = "Hugo Theme Dream"
+title = "Ai Listings Blog"
 theme = "hugo-theme-dream"
 
 # [services]
@@ -20,10 +20,10 @@ darkTheme = "forest"
 # backgroundImageDark = ""
 
 author = "xiangmiangya"
-# description = ""
+description = "探索AI的未来——AiListings Blog。在这里，我们深入挖掘最新的AI工具和时事，为您提供一个全面的视角。从办公自动化到艺术创作，从学术研究到音乐合成，我们的blog涵盖了AI领域的各个方面。加入我们，一起见证人工智能如何塑造我们的世界。AiListings Blog——您的AI领域知识宝库。"
 avatar = "img/avatar.png"
 headerTitle = "Ai Listings Blog"
-# motto = ""
+motto = "探索AI的未来——AiListings Blog"
 
 # footerBottomText = ""
 
@@ -40,12 +40,19 @@ rss = true
 
 # email = ""
 
-siteStartYear = 2016
+siteStartYear = 2020
 
-# favicon = "favicon.ico"
+favicon = "favicon.ico"
 
-# Syntax highlighting
-# customSyntaxHighlighting = true
+# 代码高亮
+highlightjs = true
+highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
+highlightjsExtraLanguages = ["ocaml"]
+highlightjsTheme = "gruvbox-light"
+highlightjsThemeDark = "gruvbox-dark"
+
+# search
+enableSearch = true
 
 # options
 # stickyNav = true
@@ -53,7 +60,7 @@ siteStartYear = 2016
 # collapseNavItems = ["posts", "categories", "tags"]
 # noDefaultSummaryCover = true
 # showTableOfContents = true
-# showSummaryCoverInPost = true
+showSummaryCoverInPost = true
 # showPrevNextPost = true
 # reorderShares = ["x", "facebook", "whatsapp"]
 
@@ -66,3 +73,4 @@ siteStartYear = 2016
 # [params.experimental]
 # jsDate = true
 # jsDateFormat = "yyyy年MM月dd日"
+
