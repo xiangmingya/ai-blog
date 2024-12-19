@@ -87,7 +87,10 @@
     <div id="dream-global-bg"></div>
 
     
-<nav class="mt-4 lg:mt-8 py-4">
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
 
   
   <div class="container flex justify-between px-4">
@@ -125,6 +128,8 @@
   <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
     <ion-icon name="information-circle"></ion-icon>关于</div>
 </li>
+
+
 
 
 
@@ -193,9 +198,13 @@
 
       
       
+        
+      
 
       
 
+      
+      
       
       
 
@@ -211,30 +220,47 @@
 
 
       
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
-  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
-</a>
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
 
 
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
-  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
-</a>
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
 
 
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
-  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
-</a>
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
 
 
-      
+          
 
-      
-
+          
+        </ul>
+      </div>
       
     </section>
   </div>
@@ -248,8 +274,25 @@
             
 <div class="mt-4 px-4">
   
-  <div>
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
   
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#视频">视频</a></li>
+        <li><a href="#绘图">绘图</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
     
     <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
       
@@ -306,6 +349,8 @@
   
   
   
+    
+  
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
       href="https://x.com/intent/post?text=%e8%b0%b7%e6%ad%8c%e9%9c%87%e6%92%bc%e5%8f%91%e5%b8%83Veo2%e8%a7%86%e9%a2%91%e6%a8%a1%e5%9e%8b%ef%bc%8c%e5%8f%ab%e6%9d%bfOpenAI&amp;url=https://blog.ailistings.cn/posts/%E8%B0%B7%E6%AD%8C%E9%9C%87%E6%92%BC%E5%8F%91%E5%B8%83veo2%E8%A7%86%E9%A2%91%E6%A8%A1%E5%9E%8B%E5%8F%AB%E6%9D%BFopenai/" target="_blank" rel="noopener noreferrer"
@@ -350,6 +395,23 @@
 <p>谷歌这次的大招，与 OpenAI 形成了鲜明对比。OpenAI 预告 12 天直播勾起了大家的兴趣，却又一直泼冷水。而谷歌每次出现都是核弹级别，从 Gemini 2.0 到这次的 Veo 2，抢尽了风头。不知道 Sam Altman 看到谷歌这次的更新后，还能不能睡得着觉呢？</p>
 <p>让我们一起期待谷歌未来更多的精彩表现吧！</p>
 
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a class="group btn btn-outline" href="/posts/chatgpt%E7%9A%84%E8%A7%86%E8%A7%89%E9%9D%A9%E5%91%BDai%E6%8A%80%E6%9C%AF%E7%9A%84%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BA%A4%E4%BA%92%E6%96%B0%E7%BA%AA%E5%85%83/" title="ChatGPT的“视觉革命”——AI技术的多模态交互新纪元">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">下一页</span>
+            <span class="max-w-48 truncate">ChatGPT的“视觉革命”——AI技术的多模态交互新纪元</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
       
     </article>
   </div>

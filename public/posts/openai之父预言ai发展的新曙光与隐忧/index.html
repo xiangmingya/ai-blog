@@ -86,7 +86,10 @@
     <div id="dream-global-bg"></div>
 
     
-<nav class="mt-4 lg:mt-8 py-4">
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
 
   
   <div class="container flex justify-between px-4">
@@ -124,6 +127,8 @@
   <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="关于">
     <ion-icon name="information-circle"></ion-icon>关于</div>
 </li>
+
+
 
 
 
@@ -192,9 +197,13 @@
 
       
       
+        
+      
 
       
 
+      
+      
       
       
 
@@ -210,30 +219,47 @@
 
 
       
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="归档">
-  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
-</a>
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="归档">
+    <ion-icon name="archive"></ion-icon>
+    归档
+  </a>
+</li>
 
 
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="所有分类">
-  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
-</a>
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="所有分类">
+    <ion-icon name="grid"></ion-icon>
+    所有分类
+  </a>
+</li>
 
 
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="所有标签">
-  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
-</a>
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="所有标签">
+    <ion-icon name="pricetags"></ion-icon>
+    所有标签
+  </a>
+</li>
 
 
-      
+          
 
-      
-
+          
+        </ul>
+      </div>
       
     </section>
   </div>
@@ -247,8 +273,26 @@
             
 <div class="mt-4 px-4">
   
-  <div>
+  <div class="relative" x-data="{ height: '' }" x-init="height = $el.scrollHeight + 'px'">
   
+    
+    <div class="absolute right-0 lg:w-36 xl:w-48 hidden lg:block" :style="{ height }">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#从弱到强的-ai-发展之路">从弱到强的 AI 发展之路</a></li>
+        <li><a href="#通向-超级安全-的探索之旅">通向 “超级安全” 的探索之旅</a></li>
+        <li><a href="#对未来社会的深远影响">对未来社会的深远影响</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      <div class="dream-adsense px-5">
+      
+      </div>
+    </div>
     
     <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
       
@@ -304,6 +348,8 @@
   
   
   
+  
+    
   
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
@@ -398,6 +444,23 @@
 AI 凭借其强大的数据处理和推理能力，可以帮助人类处理海量复杂的信息，快速分析问题并提供多种解决方案，成为人类拓展能力边界的有力工具。比如在科研领域，AI 能够协助科学家分析实验数据、挖掘潜在规律，在数学、物理等学科中辅助探索新知识，加速科研进程；在医疗领域，AI 可以辅助医生进行疾病诊断，通过对大量病例数据的学习和推理，为医生提供参考意见，提高诊断的准确性和效率。
 而人类所具有的创造力、情感理解、道德判断以及人际交往能力等，则是 AI 难以企及的。人类可以为 AI 的发展设定合理的目标和方向，引导其更好地服务社会。例如在艺术创作中，AI 生成的作品往往缺乏人类创作者赋予的情感温度和独特的文化内涵，人类艺术家可以与 AI 合作，将自己的创意和情感融入其中，创造出更具魅力的作品。</p>
 
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/posts/chatgpt%E7%9A%84%E8%A7%86%E8%A7%89%E9%9D%A9%E5%91%BDai%E6%8A%80%E6%9C%AF%E7%9A%84%E5%A4%9A%E6%A8%A1%E6%80%81%E4%BA%A4%E4%BA%92%E6%96%B0%E7%BA%AA%E5%85%83/" title="ChatGPT的“视觉革命”——AI技术的多模态交互新纪元">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">上一页</span>
+            <span class="max-w-48 truncate">ChatGPT的“视觉革命”——AI技术的多模态交互新纪元</span>
+          </div>
+        </a>
+        
+
+        
+        <div></div>
+        
+      </div>
       
     </article>
   </div>
